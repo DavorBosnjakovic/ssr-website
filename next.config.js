@@ -1,9 +1,9 @@
 // next.config.js
 // Path: /next.config.js
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true, // Disable Vercel image optimization to avoid 402 errors
     remotePatterns: [
       {
         protocol: 'https',
@@ -43,5 +43,4 @@ const nextConfig = {
     },
   },
 }
-
 module.exports = nextConfig

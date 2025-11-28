@@ -84,7 +84,7 @@ export default function PlaylistsPage() {
           </h1>
           
           <p className="text-text-secondary text-lg text-center mb-12">
-            Curated collections of the chillest vibes{playlists.length > 0 && ` â€¢ ${playlists.length} playlists`}
+            Curated collections of the chillest vibes{playlists.length > 0 && ` - ${playlists.length} playlists`}
           </p>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
