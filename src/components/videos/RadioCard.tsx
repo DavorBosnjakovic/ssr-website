@@ -3,7 +3,6 @@
 
 'use client'
 
-import Image from 'next/image'
 import { YouTubeVideo } from '@/types/youtube.types'
 import { Radio } from 'lucide-react'
 
@@ -26,13 +25,11 @@ export default function RadioCard({ video, priority = false }: RadioCardProps) {
   return (
     <div className="w-full max-w-4xl mx-auto group relative bg-gradient-to-br from-[var(--bg-secondary)] to-[var(--bg-elevated)] rounded-xl overflow-hidden border-2 border-[var(--accent-coral)] hover:border-[var(--accent-coral)] hover:shadow-[0_0_20px_rgba(255,155,133,0.3)] transition-all duration-300">
       <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="block relative w-full aspect-video overflow-hidden">
-        <Image
+        <img
           src={thumbnail.url}
           alt={snippet.title}
-          fill
-          priority={priority}
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 896px"
+          loading={priority ? 'eager' : 'lazy'}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         
         <div className="absolute inset-0 bg-gradient-to-t from-red-900/80 via-transparent to-transparent">

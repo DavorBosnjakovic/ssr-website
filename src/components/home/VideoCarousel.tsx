@@ -4,7 +4,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import { YouTubeVideo } from '@/types/youtube.types'
 import { ChevronLeft, ChevronRight, Play, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
@@ -113,12 +112,11 @@ export default function VideoCarousel({
                   return (
                     <SwiperSlide key={video.id}>
                       <div className="relative aspect-video bg-[var(--bg-elevated)] group/slide">
-                        <Image
+                        <img
                           src={thumbnail.url}
                           alt={video.snippet.title}
-                          fill
-                          className="object-cover"
-                          priority={index === 0}
+                          className="absolute inset-0 w-full h-full object-cover"
+                          loading={index === 0 ? 'eager' : 'lazy'}
                         />
 
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover/slide:opacity-90 transition-opacity"></div>
@@ -217,11 +215,11 @@ export default function VideoCarousel({
                       aria-label={`Go to video ${index + 1}`}
                     >
                       <div className="relative w-full h-full rounded-lg overflow-hidden">
-                        <Image
+                        <img
                           src={video.snippet.thumbnails.default.url}
                           alt={video.snippet.title}
-                          fill
-                          className="object-cover"
+                          className="absolute inset-0 w-full h-full object-cover"
+                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/thumb:opacity-100 transition-opacity flex items-center justify-center">
                           <Play className="w-6 h-6 text-white fill-white" />

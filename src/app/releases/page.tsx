@@ -4,7 +4,6 @@
 'use client'
 
 import { useEffect, useState, useRef, useCallback } from 'react'
-import Image from 'next/image'
 
 interface Album {
   id: string
@@ -158,12 +157,10 @@ export default function ReleasesPage() {
                       <div className="bg-bg-secondary rounded overflow-hidden hover:bg-bg-elevated transition-all duration-300 hover:scale-105">
                         <div className="aspect-square relative">
                           {album.images[0] ? (
-                            <Image
+                            <img
                               src={album.images[0].url}
                               alt={album.name}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
+                              className="absolute inset-0 w-full h-full object-cover"
                               loading={groupIndex < 2 ? 'eager' : 'lazy'}
                             />
                           ) : (

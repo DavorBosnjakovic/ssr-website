@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { YouTubeVideo } from '@/types/youtube.types'
 import { Play, Eye, ThumbsUp } from 'lucide-react'
 
@@ -47,12 +46,12 @@ export default function VideoCard({ video, priority = false }: VideoCardProps) {
   return (
     <div className="group relative bg-[var(--bg-secondary)] rounded-lg overflow-hidden border border-[var(--border-subtle)] hover:border-[var(--accent-purple)] transition-all duration-300 hover:-translate-y-1">
       <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="block relative aspect-video overflow-hidden">
-        <Image
+        <img
           src={thumbnail.url}
           alt={snippet.title}
           width={thumbnail.width}
           height={thumbnail.height}
-          priority={priority}
+          loading={priority ? 'eager' : 'lazy'}
           className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
         />
         

@@ -4,7 +4,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -164,12 +163,10 @@ export default function ReleasesCarousel({
                     <div className="bg-bg-secondary rounded-lg overflow-hidden hover:bg-bg-elevated transition-all duration-300 hover:scale-105">
                       <div className="aspect-square relative">
                         {album.images[0] ? (
-                          <Image
+                          <img
                             src={album.images[0].url}
                             alt={album.name}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 200px"
+                            className="absolute inset-0 w-full h-full object-cover"
                             loading={index < 6 ? 'eager' : 'lazy'}
                           />
                         ) : (
