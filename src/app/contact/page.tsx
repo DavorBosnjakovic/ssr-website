@@ -124,6 +124,7 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     required
+                    autoComplete="name"
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-bg-elevated border border-border-medium rounded-lg text-text-primary focus:outline-none focus:border-accent-purple focus:ring-1 focus:ring-accent-purple transition-colors"
@@ -140,6 +141,7 @@ export default function ContactPage() {
                     id="email"
                     name="email"
                     required
+                    autoComplete="email"
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-bg-elevated border border-border-medium rounded-lg text-text-primary focus:outline-none focus:border-accent-purple focus:ring-1 focus:ring-accent-purple transition-colors"
