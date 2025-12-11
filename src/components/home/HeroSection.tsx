@@ -41,7 +41,7 @@ export default function HeroSection() {
         </div>
       )}
 
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-screen w-full overflow-hidden pt-20">
         <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-6xl mx-auto">
             <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-text-primary mb-6 sm:mb-8 tracking-wide leading-tight" style={{ fontFamily: 'Hadenut, serif' }}>
