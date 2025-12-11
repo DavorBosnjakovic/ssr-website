@@ -1,0 +1,21 @@
+{
+  "name": "Soothing Soundwave Records",
+  "short_name": "SSR",
+  "description": "The everlasting wave of the chillest and most relaxing music",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0E14",
+  "theme_color": "#C879FF",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
