@@ -9,32 +9,32 @@ export default function Footer() {
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/soothingsoundwaverecords',
-      icon: 'https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/social-icons/instagram.png'
+      icon: '/instagram.png'
     },
     {
       name: 'TikTok',
       url: 'https://www.tiktok.com/@soothingsoundwave',
-      icon: 'https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/social-icons/tiktok.png'
+      icon: '/tiktok.png'
     },
     {
       name: 'YouTube',
       url: 'https://www.youtube.com/@soothingsoundwaverecords',
-      icon: 'https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/social-icons/youtube.png'
+      icon: '/youtube.png'
     },
     {
       name: 'Spotify',
       url: 'https://open.spotify.com/user/31yjtpntorucp6g2jfo3ghqneg2m',
-      icon: 'https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/social-icons/spotify.png'
+      icon: '/spotify.png'
     },
     {
       name: 'Discord',
       url: 'https://discord.com/invite/TwtjMEGyz8',
-      icon: 'https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/social-icons/discord.png'
+      icon: '/discord.png'
     },
     {
       name: 'Ko-fi',
       url: 'https://ko-fi.com/soothingsoundwaverecords',
-      icon: 'https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/social-icons/ko-fi.png'
+      icon: '/ko-fi.png'
     }
   ]
 

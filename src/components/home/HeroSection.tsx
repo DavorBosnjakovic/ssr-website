@@ -32,7 +32,7 @@ export default function HeroSection() {
       {mounted && (
         <div className="fixed inset-0 w-full h-full -z-10">
           <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-            <source src="https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/hero-videos/ssr-hero-vid.mp4" type="video/mp4" />
+            <source src="/ssr-hero-vid.mp4" type="video/mp4" />
           </video>
           {/* Overlay koji fade OUT sa 2s linear animacijom */}
           <div className="absolute inset-0 bg-black animate-hero-overlay"></div>

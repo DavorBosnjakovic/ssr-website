@@ -23,7 +23,7 @@ export default function VideoBackground() {
         className="w-full h-full object-cover opacity-50"
       >
         <source
-          src="https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/hero-videos/ssr-hero-vid.mp4"
+          src="/ssr-hero-vid.mp4"
           type="video/mp4"
         />
       </video>

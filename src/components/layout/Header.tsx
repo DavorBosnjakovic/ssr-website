@@ -20,7 +20,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/sign/logo/LogoVector.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9mZGU2NTE1Ny0yZWZkLTRhY2MtOTY1Yy1kZjBmN2UwMTY2ZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsb2dvL0xvZ29WZWN0b3IucG5nIiwiaWF0IjoxNzYxNTYyODM2LCJleHAiOjMzMjY2MDI2ODM2fQ.wOOumAVQJf8Q0qKvUXAAT7pJ26f-qkOZEPbuo5AiBxY"
+              src="/logo.png"
               alt="Soothing Soundwave Records Logo"
               width={50}
               height={50}
