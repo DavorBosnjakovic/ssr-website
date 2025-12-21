@@ -28,7 +28,7 @@ export default function SubmitPage() {
                 className="hover:opacity-80 transition-opacity"
               >
                 <Image 
-                  src="https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/RO/full_logo.png" 
+                  src="/images/release-organizer/full_logo.png" 
                   alt="Release Organizer"
                   width={300}
                   height={75}
@@ -87,7 +87,7 @@ export default function SubmitPage() {
               <div className="bg-gradient-to-br from-accent-purple/20 to-accent-purple/5 p-8 border-b border-border-subtle/50">
                 <div className="w-20 h-20 bg-accent-purple/20 rounded-full flex items-center justify-center mb-4">
                   <Image
-                    src="https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/RO/Icon_music_note_48x48.png"
+                    src="/images/release-organizer/icon_music_note.png"
                     alt="Music Note"
                     width={40}
                     height={40}
@@ -134,7 +134,7 @@ export default function SubmitPage() {
               <div className="bg-gradient-to-br from-accent-pink/20 to-accent-pink/5 p-8 border-b border-border-subtle/50">
                 <div className="w-20 h-20 bg-accent-pink/20 rounded-full flex items-center justify-center mb-4">
                   <Image
-                    src="https://ocfefvcylrzsjuhcqxlu.supabase.co/storage/v1/object/public/RO/Icon_music_note_48x48.png"
+                    src="/images/release-organizer/icon_music_note.png"
                     alt="Music Note"
                     width={40}
                     height={40}
